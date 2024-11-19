@@ -111,7 +111,7 @@ body {
 }
 
 .heading-tertiary {
-  font-size: 3rem;
+  font-size: 2.4rem;
   font-weight: 700;
   margin-bottom: 3.2rem;
   letter-spacing: -0.5px;
@@ -285,6 +285,20 @@ a {
   padding-bottom: 80%;
   background-color: #ffd7b5;
 }
+.step-img::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: auto;
+  top: 50%;
+  transform: translate(0, -50%);
+  height: 0;
+  border-radius: 50%;
+  z-index: -1;
+  width: 60%;
+  padding-bottom: 60%;
+  background-color: #e67e22;
+}
 
 .step-number {
   font-size: 4.8rem;
@@ -305,4 +319,78 @@ a {
   left: 0;
   font-size: 2rem;
   transform: translate(-50%, -80%);
+}
+
+.feat-heading {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin: 6.4rem 0;
+  display: block;
+  justify-self: center;
+  color: #333;
+  opacity: calc(1 / 2);
+  text-transform: uppercase;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.logos img {
+  height: 3.2rem;
+  filter: brightness(0);
+  filter: sepia(100%);
+  opacity: calc(1 / 1.5);
+}
+
+.meals {
+  padding: 9.6rem 0;
+}
+
+.meal img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+  display: block;
+  object-fit: cover;
+  margin-bottom: -1.6rem;
+}
+
+.meal {
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  width: 80%;
+}
+
+.meal-text {
+  padding: 2.4rem;
+  margin-top: 1.2rem;
+}
+
+.meal-description {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1.6rem;
+  line-height: 1.4;
+  width: 100%;
+  margin-top: -1.4rem;
+}
+
+.meal-atts {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.6rem;
+}
+
+.meal-att {
+  display: flex;
+  align-items: center;
+}
+
+ion-icon {
+  font-size: 1.6rem;
+  color: #e67e22;
+  margin-right: 0.8rem;
 }
