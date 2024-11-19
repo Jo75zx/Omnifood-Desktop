@@ -160,6 +160,10 @@ body {
   margin-right: 1.6rem !important;
 }
 
+.margin-bottom-sm {
+  margin-bottom: 2.4rem;
+}
+
 .btn-full:hover,
 .btn-full:active {
   background-color: #b15504;
@@ -357,9 +361,16 @@ a {
 }
 
 .meal {
-  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.25);
   border-radius: 1rem;
   width: 80%;
+  transition: all 0.3s;
+}
+
+.meal:hover {
+  transform: translateY(-2rem);
+  transition: all 0.3s;
+  box-shadow: 0 3.2rem 3rem rgba(0, 0, 0, 0.2);
 }
 
 .meal-text {
@@ -368,7 +379,7 @@ a {
 }
 
 .meal-description {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 400;
   margin-bottom: 1.6rem;
   line-height: 1.4;
@@ -381,6 +392,7 @@ a {
   justify-content: space-between;
   flex-direction: column;
   gap: 1rem;
+  font-size: 1.1rem;
   margin-top: 1.6rem;
 }
 
@@ -393,4 +405,105 @@ ion-icon {
   font-size: 1.6rem;
   color: #e67e22;
   margin-right: 0.8rem;
+}
+
+.list-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  list-style: none;
+  font-weight: 700;
+  font-size: 1.6rem;
+  opacity: calc(70%);
+}
+
+.diets {
+  width: 80%;
+  padding: 3.2rem;
+  border-radius: 10px;
+}
+
+.diets h3 {
+  color: #e67e22;
+}
+
+.center {
+  justify-items: center;
+}
+
+.all-recipes {
+  display: flex;
+  justify-content: center;
+  margin-top: 4.8rem;
+}
+.recipes:link,
+.recipes:visited {
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+.recipes:hover,
+.recipes:active {
+  color: #b15504;
+  border-bottom: 1px solid transparent;
+}
+
+.testimonials-gallery {
+  align-items: center;
+  background-color: #f8f0ea;
+  grid-template-columns: 55fr 45fr;
+}
+
+.testimonials-container {
+  padding: 0 4.8rem;
+}
+
+.testimonial {
+  padding: 0 2.4rem;
+  width: fit-content;
+}
+
+.testimonial-img {
+  width: 30%;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 1.6rem;
+  border: 2px ridge #b15504;
+}
+
+.testimonial-text {
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.testimonial-name {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  opacity: calc(75%);
+  filter: brightness(200%);
+}
+
+.gallery-img {
+  display: inline-block;
+  width: 100%;
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+}
+.gallery-img:hover {
+  transform: scale(1.15);
+}
+
+.gallery figure {
+  width: 30%;
+  overflow: hidden;
+}
+
+.gallery {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
