@@ -6,9 +6,6 @@
   .heading-primary {
     font-size: 4rem;
   }
-  .gallery figure {
-    width: 40%;
-  }
 }
 
 @media (max-width: 75em) {
