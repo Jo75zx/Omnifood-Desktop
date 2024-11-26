@@ -524,6 +524,7 @@ ion-icon {
 .pricing-heading {
   text-align: center;
   letter-spacing: -0.5px;
+  margin-bottom: 1.6rem;
   text-transform: uppercase;
 }
 
