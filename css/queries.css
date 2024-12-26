@@ -49,7 +49,8 @@
   }
   .nav-list {
     position: absolute;
-    background-color: rgb(245, 237, 227);
+    background-color: rgb(245, 237, 227, 0.6);
+    backdrop-filter: blur(5px);
     top: 0;
     left: 0;
     width: 100%;
@@ -67,6 +68,7 @@
   }
   .nav-opened .nav-list {
     opacity: 1;
+    transform: translateX(0);
     pointer-events: all;
     visibility: visible;
   }
@@ -232,6 +234,10 @@
   }
   .step-img:nth-child(6) {
     grid-row: 5;
+  }
+  .step-img {
+    width: 50%;
+    justify-self: center;
   }
   .gallery figure {
     width: 19%;

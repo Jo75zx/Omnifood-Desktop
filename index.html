@@ -4,11 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Omnifood</title>
+    <meta name="description"
+        content="Omnifood is a premium food delivery service with the mission to bring affordable and healthy meals to as many people as possible.">
+    <title>Omnifood &mdash; Never cook again</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/queries.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="./content/img/favicon.png" type="image/x-icon">
+
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
@@ -16,16 +20,16 @@
 
 <body>
 
-    <header class="header nav-opened">
+    <header class="header sticky">
         <nav class="nav">
             <div class="nav-logo">
                 <a href="#"><img class="logo" src="./content/img/omnifood-logo.png" alt="Omnifood logo"></a>
             </div>
             <ul class="nav-list">
-                <li class="nav-item"><a href="#" class="nav-link">Food delivery</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">How it works</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Our cities</a></li>
-                <li class="nav-item"><a href="#" class="nav-link nav-button">Sign up</a></li>
+                <li class="nav-item"><a href="#how" class="nav-link">How it works</a></li>
+                <li class="nav-item"><a href="#meals" class="nav-link">Meals</a></li>
+                <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li class="nav-item"><a href="#cta" class="nav-link nav-button">Sign up</a></li>
             </ul>
         </nav>
         <button class="nav-btn">
@@ -46,8 +50,8 @@
                         goodbye to the hassle of cooking.
                         We've delivered over 1.5 million meals across 20 different cities worldwide.
                     </p>
-                    <a href="#" class="btn btn-full margin-right-sm">Start eating healthy</a>
-                    <a href="#" class="btn btn-ghost">Show me more &darr;</a>
+                    <a href="#cta" class="btn btn-full margin-right-sm">Start eating healthy</a>
+                    <a href="#how" class="btn btn-ghost">Show me more &darr;</a>
                     <div class="deliverd">
                         <div class="faces">
                             <img src="./content/img/customers/customer-1.jpg" alt="Customer 1">
@@ -83,7 +87,7 @@
             </div>
         </section>
 
-        <section class="how">
+        <section class="how" id="how">
             <div class="container">
                 <span class="subheading">How it works.</span>
                 <h2 class="heading-secondary">
@@ -141,7 +145,7 @@
             </div>
         </section>
 
-        <section class="meals">
+        <section class="meals" id="meals">
             <div class="container center">
                 <span class="subheading">Our meals.</span>
                 <h2 class="heading-secondary">
@@ -201,7 +205,7 @@
             </div>
         </section>
 
-        <section class="testimonials-gallery grid">
+        <section class="testimonials-gallery grid" id="testimonials">
 
             <div class="testimonials-container">
                 <span class="subheading">TESTIMONIALS</span>
@@ -367,7 +371,7 @@
                 </div>
             </div>
         </section>
-        <section class="cta">
+        <section class="cta" id="cta">
             <div class="container ">
                 <div class="cta-container">
                     <div class="cta-textbox">
@@ -468,6 +472,7 @@
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./js/main.js" defer></script>
 </body>
 
 </html>

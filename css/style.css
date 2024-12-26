@@ -37,6 +37,7 @@ white-space:
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -48,6 +49,7 @@ html {
 *:focus {
   outline: 2px dotted #333;
   outline-offset: 0.8rem;
+  z-index: 9999;
 }
 
 body {
@@ -85,6 +87,7 @@ body {
 .hero {
   background-color: #f8f0ea;
   padding: 6.4rem 0 9.6rem 0;
+  margin-top: 9.6rem;
 }
 
 .hero-container {
@@ -252,7 +255,16 @@ body {
   align-items: center;
   background-color: #f8f0ea;
   padding: 0 4.8rem;
-  position: relative;
+  /* position: relative; */
+}
+.sticky {
+  background-color: #f8f0eaf1;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.1);
 }
 
 .nav {
