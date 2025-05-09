@@ -240,7 +240,7 @@ body {
 }
 
 .logo {
-  width: 15rem;
+  width: 5rem;
 }
 
 .nav-logo {
@@ -786,7 +786,6 @@ ion-icon {
 .footer-link:active {
   color: #333;
 }
-
 .social {
   display: flex;
   margin-top: 2.4rem;
